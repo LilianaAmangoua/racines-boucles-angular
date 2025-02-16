@@ -1,0 +1,31 @@
+mat-toolbar {
+  width: 100%;
+}
+
+mat-toolbar-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.menu-item{
+  cursor: pointer;
+}
+
+.responsive-menu {
+  display: none;
+}
+
+
+/*Smartphones*/
+@media screen and (max-width: 600px) {
+  .responsive-menu {
+    display: block;
+    position: absolute;
+  }
+
+  .menu-item {
+    display: none;
+  }
+
+}

@@ -1,0 +1,21 @@
+
+<mat-toolbar>
+  <mat-toolbar-row>
+    <span class="menu-item">Accueil</span>
+    <span class="menu-item">Articles</span>
+    <span class="menu-item">A propos</span>
+    <span class="menu-item">Contact</span>
+
+    <button mat-icon-button [matMenuTriggerFor]="menu" class="responsive-menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </mat-toolbar-row>
+
+</mat-toolbar>
+
+<mat-menu #menu="matMenu">
+  <button mat-menu-item><span>Accueil</span></button>
+  <button mat-menu-item><span>Articles</span></button>
+  <button mat-menu-item><span>A propos</span></button>
+  <button mat-menu-item><span>Contact</span></button>
+</mat-menu>
