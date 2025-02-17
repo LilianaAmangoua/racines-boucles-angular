@@ -16,6 +16,10 @@ mat-toolbar-row {
   display: none;
 }
 
+.menu-item-active {
+  border-bottom: 3px solid black;
+}
+
 
 /*Smartphones*/
 @media screen and (max-width: 600px) {

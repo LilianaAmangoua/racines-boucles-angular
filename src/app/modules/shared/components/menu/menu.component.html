@@ -1,10 +1,10 @@
 
 <mat-toolbar>
   <mat-toolbar-row>
-    <span class="menu-item">Accueil</span>
-    <span class="menu-item">Articles</span>
-    <span class="menu-item">A propos</span>
-    <span class="menu-item">Contact</span>
+    <span class="menu-item" routerLink="" routerLinkActive="menu-item-active">Accueil</span>
+    <span class="menu-item" routerLink="articleList" routerLinkActive="menu-item-active">Articles</span>
+    <span class="menu-item" routerLink="about" routerLinkActive="menu-item-active">A propos</span>
+    <span class="menu-item" routerLink="contact" routerLinkActive="menu-item-activeç">Contact</span>
 
     <button mat-icon-button [matMenuTriggerFor]="menu" class="responsive-menu">
       <mat-icon>menu</mat-icon>
@@ -14,8 +14,8 @@
 </mat-toolbar>
 
 <mat-menu #menu="matMenu">
-  <button mat-menu-item><span>Accueil</span></button>
-  <button mat-menu-item><span>Articles</span></button>
-  <button mat-menu-item><span>A propos</span></button>
-  <button mat-menu-item><span>Contact</span></button>
+  <button mat-menu-item ><span routerLink="">Accueil</span></button>
+  <button mat-menu-item><span routerLink="articleList">Articles</span></button>
+  <button mat-menu-item><span routerLink="about">A propos</span></button>
+  <button mat-menu-item><span routerLink="contact">Contact</span></button>
 </mat-menu>
