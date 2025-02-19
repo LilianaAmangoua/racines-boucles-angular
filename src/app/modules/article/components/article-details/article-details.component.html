@@ -1,1 +1,5 @@
-<p>article-details works!</p>
+<article *ngFor="let anArticle of articles">
+  <h1>{{anArticle.title}}</h1>
+  <section>{{anArticle.content}}</section>
+  <img [src]="anArticle.image_path" [alt]="anArticle.image_alt"/>
+</article>
