@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {ArticleType} from '../../../../models/articleType';
 import {ArticleService} from '../../article.service';
 import {NgOptimizedImage} from '@angular/common';
@@ -10,7 +10,7 @@ import {NgOptimizedImage} from '@angular/common';
   styleUrl: './article-details.component.css'
 })
 export class ArticleDetailsComponent implements OnInit{
-  articles: ArticleType[] = [];
+  @Input() articles: ArticleType[] = [];
   constructor(private articleService: ArticleService) {
 
   }

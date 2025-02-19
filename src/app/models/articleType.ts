@@ -4,4 +4,6 @@ export interface ArticleType {
   content: string;
   image_path: string;
   image_alt: string;
+  category: string;
+  date: string;
 }

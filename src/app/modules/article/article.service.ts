@@ -7,7 +7,7 @@ import {ArticleType} from '../../models/articleType';
   providedIn: 'root'
 })
 export class ArticleService {
-  private articleUrl = "../../assets/jsonData/articles.json";
+  private articleUrl = "assets/jsonData/articles.json";
   constructor(private http: HttpClient) { }
 
   getArticles (): Observable<ArticleType[]> {
